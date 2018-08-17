@@ -59,8 +59,6 @@ const _ = (() => {
             }else{
                 allNodes = document.getElementsByTagName("*");
             }
-
-            debugger;
             
             //finding the elements on the basis of their order.
             for (let j = 0; j < allNodes.length; j++) {
@@ -111,8 +109,7 @@ const _ = (() => {
 
                     //removing ^, $, * if the attribute contains them
                     let finalAttributeName = attributeName.replace("*","").replace("^","").replace("$","");
-                    
-                    var retrievedAttributeValue = currentNode.getAttribute(finalAttributeName);
+                    let retrievedAttributeValue = currentNode.getAttribute(finalAttributeName);
 
                     if(!retrievedAttributeValue){
                         continue;
