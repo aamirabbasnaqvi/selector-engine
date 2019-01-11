@@ -5,7 +5,7 @@ Works for Tag
 works for attribute
 */
 
-const _ = (() => {
+const _ = (() => { 
 
     const selectorEngine = (selector) => {
         if (!document.querySelectorAll) {
